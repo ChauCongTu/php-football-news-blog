@@ -1,0 +1,5 @@
+RewriteEngine On
+
+RewriteRule "^([0-9_-]+)$" "index.php?id=$1"
+
+RewriteRule "full-screen/([0-9_-]+)$" "full-screen.php?id=$1"

@@ -1,0 +1,13 @@
+.error{
+    padding: 20px 0 0 0;
+    font-size: small;
+    color: red;
+}
+.error:before{
+    content: "*";
+}
+.success{
+    padding: 20px 0 0 0;
+    color: #28a745;
+    font-size: small;
+}

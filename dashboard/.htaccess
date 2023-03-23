@@ -1,0 +1,29 @@
+RewriteEngine On
+
+#Rewrite Manager
+RewriteRule "^quan-ly-chuyen-muc" "?act=cm"
+RewriteRule "^quan-ly-bai-viet" "?act=bv"
+RewriteRule "^quan-ly-nguoi-dung" "?act=usr"
+RewriteRule "^tin-nhan" "?act=msg"
+RewriteRule "^cai-dat-web" "?act=wst"
+
+#Rewrite User
+RewriteRule "^thong-tin-nguoi-dung/([0-9_-]+)$" "?act=usr&select=info&id=$1"
+
+#Rewrite Page number
+RewriteRule "^chuyen-muc/trang/([0-9_-]+)$" "?act=cm&page=$1"
+RewriteRule "^bai-viet/trang/([0-9_-]+)$" "?act=bv&page=$1"
+RewriteRule "^nguoi-dung/trang/([0-9]+)$" "?act=usr&page=$1"
+RewriteRule "^website/([a-zA-Z0-9]+)$" "?act=wst&select=$1"
+
+#Rewrite Addon
+RewriteRule "^them-chuyen-muc" "?act=cm&select=add"
+RewriteRule "^them-bai-viet" "?act=bv&select=add"
+RewriteRule "^duyet-bai-viet" "?act=bv&select=duyet"
+RewriteRule "^them-nguoi-dung" "?act=usr&select=add"
+
+#Rewrite Edit/Delete
+RewriteRule "^chuyen-muc/([a-zA-Z_-]+)/([0-9_-]+)$" "?act=cm&select=$1&id=$2"
+RewriteRule "^bai-viet/([a-zA-Z_-]+)/([0-9_-]+)$" "?act=bv&select=$1&id=$2"
+RewriteRule "^nguoi-dung/([a-zA-Z_-]+)/([0-9_-]+)$" "?act=usr&select=$1&id=$2"
+RewriteRule "^lien-he/([a-zA-Z_-]+)/([0-9_-]+)$" "?act=msg&thaotac=$1&id=$2"

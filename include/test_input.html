@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<style>
+    body{
+        font-family: Arial, Helvetica, sans-serif;
+        padding: 20px 0;
+        max-width: 1400px;
+        margin: auto;
+    }
+    .form-input{
+        border: 0;
+        border-radius: 4px;
+        width: 400px;
+        height: 50px;
+        padding: 0 30px;
+        transition: .25s ease;
+    }
+    .form-input:focus{
+        border-color: rgb(255, 0, 0);
+    }
+    .form-field{
+        position: relative;
+    }
+    .form-lable{
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 30px;
+        user-select: none;
+        color: #000;
+        pointer-events: none;
+        transition:  .25s ease;
+    }
+    .form-button{
+        width: 80px;
+        height: 40px;
+        font-size: 20px;
+        background-color: rgb(6, 1, 255);
+        color: #fff;
+        border: 1px solid #000;
+        border-radius: 4px;
+        display: block;
+
+        cursor: pointer;
+    }
+    .form-button:hover{
+        background-color: #999;
+    }
+    .form-input:not(:placeholder-shown) + .form-lable, .form-input:focus + .form-lable{
+        top: 0px;
+        left: 20px;
+        padding: 0 10px;
+        display: inline-block;
+        background-color: #fff;
+        color: #000;
+        
+    }
+</style>
+<body>
+    <div class="form-field">
+        <input type="text" class="form-input" placeholder=" ">
+        <lable class="form-lable" for="users">Username</lable>
+    </div>
+    <br>
+    <div class="form-field">
+        <input type="password" class="form-input" placeholder=" ">
+        <lable class="form-lable" for="password">Password</lable>
+    </div>
+    <br>
+    <div class="form-field">
+        <input type="button" class="form-button" value="Login">
+    </div>
+</body>
+</html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    
+    </style>
+    <script>
+        const a = $();
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
+<div class="frame">
+    <div class="blog">
+        <div class="rmenu">Bài Viết Mới Nhất</div>
+        <?php require("style/v-postlist.php"); ?>
+    </div>
+<script>
+var x = screen.width;
+var menu = document.getElementsByClassName("rmenu");
+if(x < 786){
+    menu.classList.add("text-dark");
+}
+</script>

@@ -1,0 +1,3 @@
+RewriteEngine On
+
+RewriteRule "danh-sach-chuyen-muc" "?n=danh-muc"

@@ -1,0 +1,132 @@
+/*==================================== Copy CSS =================================== */
+.tooltip {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .tooltip .tooltiptext {
+    visibility: hidden;
+    width: 140px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    bottom: 150%;
+    left: 50%;
+    margin-left: -75px;
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+  
+  .tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+  }
+  
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+  }
+/*==================================== SOCIAL CSS ====================================*/
+.icon-facebook{
+    background-color:#3b5998;
+    color: #fff;
+    padding: 5px 11px;
+    font-size: 15px;
+    position: relative;
+}
+a:hover .icon-facebook::after{
+    content: "Facebook";
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: normal;
+    font-size: 15px;
+    padding-left: 10px;
+}
+.icon-twitter{
+    position: relative;
+    background-color:#55acee;
+    color: #fff;
+    padding: 5px 7px;
+    font-size: 15px;
+}
+a:hover .icon-twitter::after{
+    content: "Twitter";
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: normal;
+    font-size: 15px;
+    padding-left: 10px;
+}
+.icon-google-plus{
+    position: relative;
+    background-color:#dc4e41;
+    color: #fff;
+    padding: 5px 7px;
+    font-size: 15px;
+}
+a:hover .icon-google-plus::after{
+    content: "Google Plus";
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: normal;
+    font-size: 15px;
+    padding-left: 10px;
+}
+.icon-pinterest{
+    position: relative;
+    background-color:#bd081c;
+    color: #fff;
+    padding: 5px 10px;
+    font-size: 15px;
+}
+a:hover .icon-pinterest::after{
+    content: "Pinterest";
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: normal;
+    font-size: 15px;
+    padding-left: 10px;
+}
+.icon-link{
+    position: relative;
+    background-color:#badb17;
+    color: #fff;
+    padding: 5px 7px;
+    font-size: 15px;
+    cursor: pointer;
+}
+.copy-link:hover .icon-link::after{
+    content: "Copy url";
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: normal;
+    font-size: 15px;
+    padding-left: 10px;
+}
+.icon-code{
+    position: relative;
+    background-color:#06ad8c;
+    color: #fff;
+    padding: 5px 7px;
+    font-size: 15px;
+}
+.copy-code:hover .icon-code::after{
+    content: "Copy HTML";
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: normal;
+    font-size: 15px;
+    padding-left: 10px;
+}
+#copied-code, #copied-link{
+    position: fixed;
+    background-color: green;
+    border-radius: .2rem;
+    color:rgb(162, 228, 162);
+    font-size: small;
+    z-index: 1;
+}

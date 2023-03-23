@@ -1,0 +1,190 @@
+/*==================================== Canvas CSS =================================== */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+.header-area{
+    height: 80px;
+    background-color: #111;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header-area a{
+    text-decoration: none;
+}
+
+.btn-open{
+    text-decoration: none;
+    display: block;
+    font-size: 30px;
+    cursor: pointer;
+    position: relative;
+    top: 0;
+    right: 10px;
+    color: rgb(0, 0, 0);
+    display: none;
+}
+.btn-close:hover{
+    color: red;
+}
+.menu-header a{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    line-height: 1.5;
+    display: inline-block;
+    font-size: 30px;
+}
+
+.offcanvas-menu{
+    position: fixed;
+    background: #ffffff;
+    top: 0;
+    left: 0;
+    width: 70%;
+    height: 100%;
+    transform: translateX(-200%);
+    border: 1px solid #000;
+    opacity: 1;
+    transition: .5s;
+    z-index: 20000;
+}
+.offcanvas-menu ul{
+    width: 100%;
+}
+
+.offcanvas-menu ul a{
+    font-size: 20px;
+    color: #000;
+}
+.offcanvas-menu ul li a:hover{
+    background-color: darkgrey;
+}
+.nen-mo{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(59, 59, 59);
+    opacity: 0.5;
+    z-index: 15;
+    transition: .3s;
+    visibility: hidden;   
+}
+.active{
+    transform: translateX(0);
+    visibility: visible;
+    transition: .5s;
+}
+a li{
+    padding: 5px 0 15px 0;
+}
+a .nav-canvas-header{
+    font-weight: bold;
+    text-decoration: none;
+    color: #ff0000;
+    font-size: 25px;
+    padding: 16px 20px;
+    text-transform: uppercase;
+    border-bottom: 1px solid rgb(103, 103, 103);
+}
+a:hover .nav-canvas-header{
+    text-shadow: 0 0 5px rgb(231, 216, 209), 0 0 7px #0000FF;
+    text-decoration: none;
+}
+a .nav-home{
+    color:rgb(0, 0, 0);
+    width: 100%;
+    padding: 35px 20px 15px 20px;
+}
+a:hover .nav-home{
+    background-color: aliceblue;
+    color:rgb(59, 59, 59);
+}
+a .nav-home::after{
+    content: "Trang chủ";
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: normal;
+    font-size: 20px;
+    padding-left: 20px;
+}
+a .nav-introduce{
+    color:rgb(0, 0, 0);
+    width: 100%;
+    padding: 15px 20px;
+}
+a:hover .nav-introduce{
+    background-color: aliceblue;
+    color:rgb(59, 59, 59);
+}
+a .nav-introduce::after{
+    content: "Giới thiệu";
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: normal;
+    font-size: 20px;
+    padding-left: 20px;
+}
+a .nav-blog{
+    color:rgb(0, 0, 0);
+    width: 100%;
+    padding: 15px 20px;
+}
+a:hover .nav-blog{
+    background-color: aliceblue;
+    color:rgb(59, 59, 59);
+}
+a .nav-blog::after{
+    content: "Blog";
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: normal;
+    margin-bottom: 0px;
+    font-size: 20px;
+    padding-left: 20px;
+}
+a .nav-contact{
+    color:rgb(0, 0, 0);
+    width: 100%;
+    padding: 15px 20px;
+}
+a:hover .nav-contact{
+    background-color: aliceblue;
+    color:rgb(59, 59, 59);
+}
+a .nav-contact::after{
+    content: "Liên hệ";
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: normal;
+    margin-bottom: 0px;
+    font-size: 20px;
+    padding-left: 20px;
+}
+a .nav-search{
+    color:rgb(0, 0, 0);
+    width: 100%;
+}
+a:hover .nav-search{
+    background-color: aliceblue;
+    color:rgb(59, 59, 59);
+}
+a .nav-search::after{
+    content: "Tìm kiếm";
+    font-family:  "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: normal;
+    margin-bottom: 0px;
+    font-size: 20px;
+}
+.form-search{
+    padding: 20px 0;
+}
+.text-search{
+    width: 85%;
+    color:#000;
+}
+label{
+    padding-bottom: 20px;
+}
+@media screen and (max-width: 821px) {
+    .btn-open{
+        display: block;
+    }
+}

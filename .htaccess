@@ -1,0 +1,21 @@
+RewriteEngine On
+#Rewrite xử lí lỗi 404
+ErrorDocument 404 "<script>var link_now = location.href;link_now = link_now + '404err';window.location=link_now;</script>"
+#Rewrite index
+RewriteRule "^index.html$" "index.php"
+#Rewrite chức năng
+RewriteRule "404err$" "/blog/error/404.php"
+RewriteRule "danh-sach-chuyen-muc$" "post/index.php?n=danh-muc"
+RewriteRule "^tim-kiem$" "CQN/search.php"
+RewriteRule "^gioi-thieu$" "CQN/about-me.php"
+RewriteRule "^lien-he$" "CQN/contact.php"
+#Rewrite trang Admin
+
+RewriteRule "^d56b699830e77ba53855679cb1d252da.login.josh.cqn$" "CQN/login.php"
+#Rewrite bài viết
+RewriteRule "^bai-viet/([a-zA-Z0-9_-]+).html$" "post/?bai-viet=$1"
+RewriteRule "^chuyen-muc/([a-zA-Z0-9_-]+)$" "post/?chuyen-muc=$1"
+RewriteRule "^chuyen-muc/([a-zA-Z0-9_-]+)/page/([0-9_-]+)$" "post/?chuyen-muc=$1&page=$2"
+
+RewriteRule "^test/([0-9_-]+)$" "test.php?id=$1"
+

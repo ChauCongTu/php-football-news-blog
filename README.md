@@ -9,16 +9,16 @@ This project is a soccer news website built using pure PHP language. It provides
 ## Installation
 
 
-### Download and install Xampp
+### 1. Download and install Xampp
 
 
 Xampp is a complete distribution of Apache, PHP, MySQL, and Perl, allowing you to run a web server on your computer. To download and install Xampp, you can refer to the guide on the official website: https://www.apachefriends.org/download.html
 
 
 
-### Clone or download the project from Github
+### 2. Clone or download the project from Github
 
- You can clone the project to your computer by using the following command: ``` git clone https://github.com/your-username/your-repository.git ```
+ You can clone the project to your computer by using the following command: ``` git clone https://github.com/ChauCongTu/php-football-news-blog.git ```
 
  Alternatively, you can download the project as a zip file and extract it into the Xampp folder.
 

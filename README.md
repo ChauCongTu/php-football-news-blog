@@ -4,9 +4,6 @@
 
 This project is a soccer news website built using pure PHP language. It provides the latest information about tournaments, matches, results, and player profiles.
 
-
-The project is built on the MVC (Model-View-Controller) architecture and uses MySQL to store data.
-
 ---
 
 ## Installation

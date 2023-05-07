@@ -1,7 +1,7 @@
 <?PHP
 /*
     Code by Josh - CQN
-    Copyrights 2022 ChauCongTu
+    Copyrights 2023 ChauCongTu
     Website has been built by PHP, HTML, CSS, JS, MySQL
 */
 //SECTION START IF LOGIN BEGINING
